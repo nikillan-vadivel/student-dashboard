@@ -1,12 +1,8 @@
 import streamlit as st
 import plotly.express as px
 import database as db
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
-
-ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
+ADMIN_PASSWORD = st.secrets.get("ADMIN_PASSWORD")
 
 @st.dialog('Confirm Deletion')
 def confirm_delete_dialog(student_id):
