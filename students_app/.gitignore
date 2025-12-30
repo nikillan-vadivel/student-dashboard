@@ -1,2 +1,2 @@
 .env
-__pycache__pip freeze > requirements.txt
+__pycache__
